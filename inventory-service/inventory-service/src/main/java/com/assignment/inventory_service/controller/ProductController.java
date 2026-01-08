@@ -22,7 +22,6 @@ public class ProductController {
         return productService.getAllProducts();
     }
 
-    // Optional (for testing data insertion)
     @PostMapping
     public Product addProduct(@RequestBody Product product) {
         return productService.saveProduct(product);
